@@ -14,7 +14,11 @@
 
 <script>
 	import PopularMovies from '../components/PopularMovies.svelte';
+	import Search from '../components/Search.svelte';
 	export let popular;
 </script>
 
-<section><PopularMovies {popular} /></section>
+<section>
+	<Search />
+	<PopularMovies {popular} />
+</section>
